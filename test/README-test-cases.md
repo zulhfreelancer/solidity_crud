@@ -1,4 +1,4 @@
-### [Case A](./test/user_crud_case_a.js) - Delete The Last User
+### [Case A](./user_crud_case_a.js) - Delete The Last User
 
 Add 3 users - Amelia, Bob and Alice. And then delete Alice.
 
@@ -41,7 +41,7 @@ LogUpdateUser(0x3333333333333333333333333333333333333333, 2, alice@example.com, 
 
 If both `LogDeleteUser` and `LogUpdateUser` events are showing the same `userAddress` and `index`, that means we were deleting the last user.
 
-### [Case B](./test/user_crud_case_b.js) - A Lonely User, Delete Her
+### [Case B](./user_crud_case_b.js) - A Lonely User, Delete Her
 
 Add only 1 user - Amelia. And then delete her.
 
@@ -63,7 +63,7 @@ It's like Case A. Amelia is the first and the last user. So, when we were deleti
 
 If both `LogDeleteUser` and `LogUpdateUser` events are showing the same `userAddress` and `index` AND the `index` is `0`, we actually deleting the lonely user.
 
-### [Case C](./test/user_crud_case_c.js) - Delete The Middle User
+### [Case C](./user_crud_case_c.js) - Delete The Middle User
 
 Add 3 users - Amelia, Bob and Alice. And then delete Bob (the middle).
 
